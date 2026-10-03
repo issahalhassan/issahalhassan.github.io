@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alhassan Issah | Finance Project Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&display=swap">
+<style>
+:root{
+  --paper:#EEF1EC; --ink:#12241F; --muted:#4F6159; --rule:#C5CFC7; --accent:#2B44C8; --card:#F7F9F6;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--paper:#0F1A17; --ink:#E6EEE9; --muted:#9DB0A6; --rule:#2B3D36; --accent:#8FA2FF; --card:#14231F;}
+}
+:root[data-theme="dark"]{--paper:#0F1A17; --ink:#E6EEE9; --muted:#9DB0A6; --rule:#2B3D36; --accent:#8FA2FF; --card:#14231F;}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.55}
+.wrap{max-width:62rem;margin:0 auto;padding:3rem 1.25rem 4rem}
+header{padding-bottom:2rem;border-bottom:3px solid var(--ink)}
+h1{font-size:clamp(2.4rem,7vw,4.4rem);line-height:1;letter-spacing:-.03em;font-weight:800;margin:0 0 1rem}
+.lede{max-width:40rem;color:var(--muted);margin:0;font-size:1.1rem}
+h2{font-size:1.15rem;font-weight:700;margin:3rem 0 0;padding-bottom:.6rem;border-bottom:1px solid var(--ink)}
+h2 small{font-weight:400;color:var(--muted);margin-left:.5rem}
+.row{display:grid;grid-template-columns:minmax(9rem,13rem) 1fr;gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid var(--rule)}
+.fig{font-variant-numeric:tabular-nums}
+.fig b{display:block;font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.05;font-weight:800;color:var(--accent);letter-spacing:-.02em}
+.fig span{display:block;margin-top:.35rem;font-size:.85rem;color:var(--muted);line-height:1.35}
+h3{margin:0;font-size:1.25rem;line-height:1.25;font-weight:700}
+.meta{margin:.3rem 0 .8rem;font-size:.9rem;color:var(--muted)}
+ul{margin:0;padding-left:1.1rem;max-width:42rem}
+li{margin:.4rem 0}
+.tools{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.9rem}
+.tools span{font-size:.8rem;padding:.15rem .55rem;border:1px solid var(--rule);background:var(--card);border-radius:3px}
+.links{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin:1rem 0 0}
+.links a{color:var(--accent);font-weight:700;font-size:.95rem;text-decoration:underline;text-underline-offset:3px}
+.links a:hover{text-decoration-thickness:2px}
+.links a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.85rem}
+@media (max-width:640px){.row{grid-template-columns:1fr;gap:.8rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Alhassan Issah</h1>
+  <p class="lede">MSc Finance, American University of Beirut. Six finance projects covering risk management, valuation, credit risk modelling and corporate finance, built with Python, Excel and EViews.</p>
+</header>
+
+<main>
+<h2>Individual projects</h2>
+
+<article class="row">
+  <div class="fig"><b>$316K–$538K</b><span>1-day 99% Value-at-Risk on a $10M portfolio, across nine methods</span></div>
+  <div>
+    <h3>Value-at-Risk and Expected Shortfall of a Four-Stock Portfolio</h3>
+    <p class="meta">MFIN 354, Risk Management in Financial Institutions, Summer 2026</p>
+    <ul>
+      <li>Tested for ARCH effects and fitted GARCH, GJR-GARCH, EGARCH and EWMA volatility models on four US equities (NEM, SLB, ROST, MAS) over 2012–2026, finding a significant leverage effect in portfolio volatility.</li>
+      <li>Estimated 1-day 99% VaR and ES using nine methods. Parametric models clustered at $330K–$380K, while stressed VaR over the COVID window was about 2.8 times the historical-simulation figure ($1.05M).</li>
+    </ul>
+    <div class="tools"><span>Python</span><span>EViews</span></div>
+    <p class="links"><a href="https://mailaub-my.sharepoint.com/:b:/g/personal/aii08_mail_aub_edu/IQDSXQhtpE_VQqJlAIb7g0iwAVchygcqaT7Hy4lshr95xlY?e=SXCt0j" target="_blank" rel="noopener">Report (PDF)</a><a href="https://mailaub-my.sharepoint.com/:u:/g/personal/aii08_mail_aub_edu/IQChwvUh1b7pQIz1ee_JTlDkAVDsX3pUGBRmsA8JxXJ_3dk?e=146vwr" target="_blank" rel="noopener">Code and output (HTML)</a></p>
+  </div>
+</article>
+
+<article class="row">
+  <div class="fig"><b>$76.52</b><span>DCF value per share against a market price of about $57</span></div>
+  <div>
+    <h3>Equity Valuation of SLB: DCF Model</h3>
+    <p class="meta">Valuation project using the McKinsey framework</p>
+    <ul>
+      <li>Rebuilt SLB's FY2022–2025 financials into NOPAT, invested capital, free cash flow and ROIC, with a bottom-up four-segment revenue forecast.</li>
+      <li>Discounted 20 years of free cash flow at a CAPM-based WACC of about 9.7%, producing a BUY recommendation.</li>
+    </ul>
+    <div class="tools"><span>Excel</span><span>LSEG Workspace</span></div>
+    <p class="links"><a href="https://mailaub-my.sharepoint.com/:x:/g/personal/aii08_mail_aub_edu/IQByfyEVI50xTZUU-djALvVEAcYEobGLlO4R0E81ECe2UeU?e=gmm7BM" target="_blank" rel="noopener">Excel model</a><a href="https://mailaub-my.sharepoint.com/:b:/g/personal/aii08_mail_aub_edu/IQBa4ekvTkEgRY0ifufb8vA4AZcG87SbkfBpGHikMRG2mzg?e=Lso4Ld" target="_blank" rel="noopener">Report (PDF)</a></p>
+  </div>
+</article>
+
+<article class="row">
+  <div class="fig"><b>26.3% → 30.8%</b><span>Average net profit margin, before and after the bond issuance</span></div>
+  <div>
+    <h3>Impact of McDonald's 2020 Bond Issuance</h3>
+    <p class="meta">MFIN 301, Accounting and Financial Analysis, December 2025</p>
+    <ul>
+      <li>Ran a before-and-after ratio analysis (2017–2019 vs 2021–2023) of profitability, liquidity, leverage, interest coverage and free cash flow around the $5.5B issuance.</li>
+      <li>Found the debt ratio fell from 84.6% to 70.1%, supporting a buy recommendation at the time of the event.</li>
+    </ul>
+    <div class="tools"><span>Excel</span><span>Refinitiv Workspace</span></div>
+    <p class="links"><a href="https://mailaub-my.sharepoint.com/:b:/g/personal/aii08_mail_aub_edu/IQC19_OGEz2wTr_FtlgNVfa5AYq3FWSbag2e89-OeGLy0RY?e=5s0515" target="_blank" rel="noopener">Report (PDF)</a></p>
+  </div>
+</article>
+
+<h2>Team projects<small>groups of three</small></h2>
+
+<article class="row">
+  <div class="fig"><b>AUC 0.926</b><span>Random forest; logistic regression reached 0.863</span></div>
+  <div>
+    <h3>Predicting Consumer Loan Default Risk</h3>
+    <p class="meta">MFIN 350D, Data Science for Finance, Summer 2026</p>
+    <ul>
+      <li>Built logistic regression and random forest models on 32,000+ loan records using a leakage-safe pipeline, with multicollinearity tested through VIF.</li>
+      <li>Showed the default 0.50 cutoff misses too many defaulters. Lowering it to 0.33 catches 257 more defaults, and we recommended the explainable logistic model for regulated lending.</li>
+    </ul>
+    <div class="tools"><span>Python</span><span>scikit-learn</span><span>SHAP</span></div>
+    <p class="links"><a href="https://mailaub-my.sharepoint.com/:u:/g/personal/aii08_mail_aub_edu/IQBkFs0PO0XrRr2Rmc2MNBojASJFEZQ8dqSrTEhcay6R7_E?e=ds8Vtp" target="_blank" rel="noopener">Project file</a></p>
+  </div>
+</article>
+
+<article class="row">
+  <div class="fig"><b>R² 0.11</b><span>Ridge regression under 5-fold cross-validation, 963 firm-years</span></div>
+  <div>
+    <h3>Predicting S&amp;P 500 Profitability with Machine Learning</h3>
+    <p class="meta">MFIN 350, AI in Financial Modeling, Spring 2026</p>
+    <ul>
+      <li>Engineered five finance-based features (market leverage, size, growth-adjusted leverage and others) and compared linear, Ridge and random forest models under train/test and 5-fold validation.</li>
+      <li>Ridge performed best, within the range reported in the literature, and the findings were presented as a stock-screening tool with business recommendations.</li>
+    </ul>
+    <div class="tools"><span>Python</span><span>Refinitiv Eikon</span><span>Power BI</span></div>
+    <p class="links"><a href="https://mailaub-my.sharepoint.com/:u:/g/personal/aii08_mail_aub_edu/IQDpmQzDYAj6SrZHFej1pbCFARu_JWnOI15_YXrzFfrG0eQ?e=W9anMU" target="_blank" rel="noopener">Project file</a><a href="https://mailaub-my.sharepoint.com/:u:/g/personal/aii08_mail_aub_edu/IQCYmQnJazfLSoHhsNP3ttfRAUrjDOooTq00Oz4b-VT0qbg?e=wtsJf4" target="_blank" rel="noopener">Power BI dashboard</a><a href="https://mailaub-my.sharepoint.com/:b:/g/personal/aii08_mail_aub_edu/IQCBkWIsR0MtRLBOP5xA5tHVAWIK0byk7HXZwgjLpFyRpKA?e=teMOO0" target="_blank" rel="noopener">Report (PDF)</a></p>
+  </div>
+</article>
+
+<article class="row">
+  <div class="fig"><b>+1.57%</b><span>Return on a $1M simulated portfolio, beta 1.81</span></div>
+  <div>
+    <h3>StockTrak Portfolio Management Simulation</h3>
+    <p class="meta">MFIN 306, Fall 2025</p>
+    <ul>
+      <li>Managed a $1M simulated portfolio (95% equities, 5% T-bills) across sectors, and evaluated it using beta, Sharpe ratio, Jensen's alpha and excess return against the S&amp;P 500.</li>
+      <li>Finished against a 3.05% benchmark, and wrote up lessons on timing, leverage and risk management from the high-beta strategy.</li>
+    </ul>
+    <div class="tools"><span>StockTrak</span></div>
+    <p class="links"><a href="https://mailaub-my.sharepoint.com/:b:/g/personal/aii08_mail_aub_edu/IQAv73Mx8MK-SaD8pJzm8diKARtrurEwjOw0VYZwEfJ5nf8?e=2V885r" target="_blank" rel="noopener">Report (PDF)</a></p>
+  </div>
+</article>
+</main>
+
+<footer>&copy; 2026 Alhassan Issah. All rights reserved. Team projects were co-authored with classmates. Please do not copy or reuse this work without permission.</footer>
+
+</div>
+</body>
+</html>
