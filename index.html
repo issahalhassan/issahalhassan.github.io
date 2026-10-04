@@ -21,8 +21,6 @@ html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.55}
 .wrap{max-width:62rem;margin:0 auto;padding:3rem 1.25rem 4rem}
 header{padding-bottom:2rem;border-bottom:3px solid var(--ink)}
-h1{font-size:clamp(2.4rem,7vw,4.4rem);line-height:1;letter-spacing:-.03em;font-weight:800;margin:0 0 1rem}
-.lede{max-width:40rem;color:var(--muted);margin:0;font-size:1.1rem}
 h2{font-size:1.15rem;font-weight:700;margin:3rem 0 0;padding-bottom:.6rem;border-bottom:1px solid var(--ink)}
 h2 small{font-weight:400;color:var(--muted);margin-left:.5rem}
 .row{display:grid;grid-template-columns:minmax(9rem,13rem) 1fr;gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid var(--rule)}
@@ -40,14 +38,29 @@ li{margin:.4rem 0}
 .links a:hover{text-decoration-thickness:2px}
 .links a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.85rem}
-@media (max-width:640px){.row{grid-template-columns:1fr;gap:.8rem}}
+h1{font-size:clamp(2rem,6.2vw,3.8rem);line-height:1.05;letter-spacing:.01em;font-weight:800;margin:0 0 1rem}
+.affil{margin:0;font-size:1.15rem;font-weight:600;line-height:1.4}
+.affil.sub{margin-top:.2rem;font-weight:500;color:var(--muted)}
+.intro{max-width:42rem;margin:1.6rem 0 0;color:var(--muted);font-size:1.05rem}
+.intro b{color:var(--ink);letter-spacing:.04em;font-size:.95rem}
+.facts{margin:1.5rem 0 0;display:grid;gap:.6rem}
+.facts div{display:grid;grid-template-columns:8rem 1fr;gap:1rem}
+.facts dt{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding-top:.2rem}
+.facts dd{margin:0}
+@media (max-width:640px){.row{grid-template-columns:1fr;gap:.8rem}.facts div{grid-template-columns:1fr;gap:.1rem}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
-  <h1>Alhassan Issah</h1>
-  <p class="lede">MSc Finance, American University of Beirut. Six finance projects covering risk management, valuation, credit risk modelling and corporate finance, built with Python, Excel and EViews.</p>
+  <h1>ALHASSAN ISSAH</h1>
+  <p class="affil">MSc Finance &middot; Suliman S. Olayan School of Business, American University of Beirut</p>
+  <p class="affil sub">Mastercard Foundation Scholar 2025&ndash;2026</p>
+  <p class="intro"><b>PROJECTS PORTFOLIO:</b> This portfolio presents selected academic projects from my MSc, with the methods, results and supporting documents for each.</p>
+  <dl class="facts">
+    <div><dt>Focus areas</dt><dd>Risk management &middot; Equity valuation &middot; Credit risk &middot; Corporate finance</dd></div>
+    <div><dt>Tools</dt><dd>Python &middot; Excel &middot; EViews &middot; Power BI &middot; Stata</dd></div>
+  </dl>
 </header>
 
 <main>
